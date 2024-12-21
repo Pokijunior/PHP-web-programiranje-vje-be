@@ -33,7 +33,7 @@ $conn->close();
     if ($result->num_rows > 0) {
         echo '<ul>';
         while ($row = $result->fetch_assoc()) {
-            echo '<li><i class="bi bi-person"></i> <strong>' . htmlspecialchars($row['first_name']) . ' ' . htmlspecialchars($row['last_name']) . '</strong> (' . htmlspecialchars($row['country']) . ')</li>';
+            echo '<i class="bi bi-person"></i> <strong>' . htmlspecialchars($row['first_name']) . ' ' . htmlspecialchars($row['last_name']) . '</strong> (' . htmlspecialchars($row['country']) . ')<br>';
         }
         echo '</ul>';
     } else {
